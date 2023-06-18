@@ -1,41 +1,112 @@
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+html {
+    background-color: rgb(192, 192, 192);
 }
-main{
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 760px;
+    margin: 0 auto;
+    padding: 0 2em;
+    background-color: white;
+    border: 1px solid mediumspringgreen;
+}
+header {
+    border-bottom: 2px solid mediumspringgreen;
+    padding: .5em 0;
+}
+header h1 {
+    color: mediumspringgreen;
+}
+main {
     display: block;
     width: 450;
     margin: 0 auto;
     padding: 20px 20px;
     background: white;
     border: 1px solid mediumspringgreen;
-}
 
+}
+aside {
+    float: left;
+    width: 150px;
+}
+section {
+    float: left;
+    width: 500px;
+}
+footer {
+    clear: both;
+    border-top: 2px solid mediumspringgreen;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+}
 h1 {
-    margin-top: 0;
-    color: mediumspringgreen;
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+h1, h2 {
+    color: rgb(208, 133, 4);
+}
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: rgb(41, 64, 124);
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(208, 133, 4);
+}
+form {
+    margin: 0;
 }
 label {
-    width: 10em;
-    padding-right: 1em;
+    width: 5em;
     float: left;
+    margin-right: 1em;
+    text-align: right;
+    margin-bottom: 1em;
 }
-
-#data input {
-    float: left;
-    width: 15em;
-    margin-bottom: .5em;
+table {
+    width: 70%;
+    border-collapse: collapse;
 }
-#data span {
-    padding-left: .25em;
-}
-#buttons input {
-    float: left;
-    margin-bottom: .5em;
+td, th {
+    padding: .25em 0;
 }
 br {
-    clear: left;
+    clear: both;
 }
-.error {
-    color: red;
-    font-weight: bold;
+
+/* the styles for the table header and footer */
+#cart_header th {
+    border-bottom: 2px solid mediumspringgreen;
+}
+#cart_footer td {
+    text-align: right;
+    border-top: 2px solid mediumspringgreen;
+}
+/* the styles for the classes */
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+.cart_qty {
+    text-align: right;
+    width: 3em;
 }
